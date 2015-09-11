@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/ic_launcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Dhammalab draws heavy influence from Shinzen Young, Daniel M. Ingram, Mahasi Sayadaw, and Gautama Buddha. The man in the image of this app is Mahasi Sayadaw - the man who helped the modern popular revival of satipatthana."
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/credits_link_text"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Satipatthāna</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_reading">Supplementary Reading</string>
+    <string name="profile">Profile</string>
+    <string name="action_credits">Credits</string>
+
+    <string name="website_url">http://185.16.40.107/dhammalab/</string>
+
+    <!-- start activity -->
+    <string name="start_info">Satipatthāna is the Pāli word for the Buddhist concept of the foundations of mindfulness. ‘Noting’ is a powerful way to cultivate Satipatthāna. This method involves tracking your subjective experience in terms of sights, sounds, and feelings, both physical and mental. It’s about appreciating yourself just as you are.</string>
+    <string name="start_start_jorney">Start Journey</string>
+
+    <!-- home activity -->
+    <string name="home_title">Day %s</string>
+    <string name="home_info">You should first go to the monastery and study the fundamentals of Noting and Satipatthāna.</string>
+    <string name="home_go_to_monastery">Go to Monastery</string>
+    <string name="home_skip">Meditate</string>
+    <string name="home_analysis">Analysis</string>
+
+    <string name="home_monastery_finished">It is time for you to observe your world with diligence and precision. Go meditate!</string>
+    <string name="home_meditation_finished">I have observed you carefully and you have great potential.</string>
+    <string name="home_analysis_finished">Excellent first session. Meet me here again when you are ready.</string>
+
+    <string name="home_high_noting_speed">In your last session, your noting speed was very rapid. You are beginning to see the impermanence of all sensory phenomena.</string>
+    <string name="home_feel_in_out_sensations">You are becoming more in tune with your body sensations and emotions. You are realizing that suffering is inescapable.</string>
+    <string name="home_hear_in_see_in_sensations">You are beginning to see your thoughts arise and pass away.</string>
+
+    <string-array name="home_no_analytic_text">
+        <item>Only if you meditate will you be liberated from the bonds of defilements that destroy what is wholesome and moral.</item>
+        <item>Where love, compassion, and respect pervade human society, there shall one find enduring unity.</item>
+        <item>Knowledge relating to the Noble Path transports one to the stage where all suffering or unsatisfactoriness ceases.</item>
+        <item>Why wait till future existence? Why not start now and work for liberation in this very life?</item>
+        <item>No being is ever satisfied with what has been given, and will always ask for more… Suffering ensues from these efforts.</item>
+        <item>Men are just living their lives without being actually aware of the slow and gradual deterioration of their bodies...</item>
+        <item>What is meant by throwing down the burden? Annihilation of tanha (craving) is throwing down the burden.</item>
+    </string-array>
+    <!-- monastery activity -->
+    <string name="monastery_lesson_number">Lesson %d of 6</string>
+
+    <string-array name="monastery_lessons_titles">
+        <item>See In</item>
+        <item>Hear In</item>
+        <item>Feel In</item>
+        <item>See Out</item>
+        <item>Hear Out</item>
+        <item>Feel Out</item>
+    </string-array>
+    <string-array name="monastery_lessons_subtitles">
+        <item>Work with Mental Images</item>
+        <item>Work with your Mental Talk</item>
+        <item>Work with Emotional Body Sensations</item>
+        <item>Work with Physical Sight</item>
+        <item>Work with Physical Sound</item>
+        <item>Work with Physical Body Sensations</item>
+    </string-array>
+
+    <string name="monastery_basic_idea">Basic Idea</string>
+    <string name="monastery_basic_instruction">Basic Instructions</string>
+
+    <string-array name="monastery_ideas">
+        <item>\nContinuously track any visual thoughts that may come up spontaneously. These will present as “mental images”, and they may be strong or weak, long or short.\n</item>
+        <item>\nIf mental talk occurs, listen to it with detachment, neither suppressing it nor holding on to it. Many thoughts take the form of this “mental chatter”.\n</item>
+        <item>\nWhen you experience an emotion, it will almost certainly involve detectable body sensations in addition to mental talk and mental images. Feel these emotions in your stomach and face.\n</item>
+        <item>\nEach time your attention shifts from one object to another or from one place in an object to a different place in that object, note that shift as a new sight experience.\n</item>
+        <item>\nFocus on external sounds, either those naturally occurring around you or sounds that you like and have chosen to play.\n</item>
+        <item>\nAt any given moment, physical body sensations may arise in just one location, in several locations, or over your whole body at once.\n</item>
+    </string-array>
+    <string-array name="monastery_instructions">
+        <item>\nWhenever you have a mental image, note that as “See In.”  Whenever all or part of the image drops away or drops off, note that as “Gone.”</item>
+        <item>\nWhenever you have mental talk, note that as “Hear In.” Whenever a burst of talk drops off or drops away, note that as “Gone.”</item>
+        <item>\nWhenever your experience is in any way emotional, that emotion may involve body experience. If so, note that as “Feel In.” If a “Feel In” sensation drops off, note that as “Gone.”</item>
+        <item>\nEach time your line of sight shifts, note “See Out.” It does not matter if the shift is spontaneous or intentional.  If you happen to note the preceding sight drop away or drop off, note “Gone.”</item>
+        <item>\nWhenever you’re aware of sound, note “Hear Out.” If all or part of the sound drops away or drops off, note “Gone.”</item>
+        <item>\nWhenever you’re aware of a physical body sensation, note “Feel Out.” If all or part of that sensation drops away or drops off, note “Gone.”</item>
+    </string-array>
+
+    <string name="monastery_next">Next</string>
+
+    <!-- choose time activity -->
+    <string name="choose_time_title">Choose a Time</string>
+    <string name="choose_time_info">Promise yourself that, to the best of your ability, you will stay true to your sensory experience for the duration of the session.</string>
+    <string name="choose_time_2_min">2 Minutes</string>
+    <string name="choose_time_5_min">5 Minutes</string>
+    <string name="choose_time_10_min">10 Minutes</string>
+    <string name="choose_time_30_min">30 Minutes</string>
+    <string name="choose_time_60_min">60 Minutes</string>
+    <string name="choose_time_180_min">180 Minutes</string>
+
+    <!-- prepare activity -->
+    <string name="prepare_title">Prepare</string>
+    <string name="prepare_countdown">Your Satipatthana meditation will begin in %d seconds.</string>
+
+    <!-- main activity -->
+    <string name="meditate_gone">GONE</string>
+    <string name="meditate_see_in">See In</string>
+    <string name="meditate_hear_in">Hear In</string>
+    <string name="meditate_feel_in">Feel In</string>
+    <string name="meditate_see_out">See Out</string>
+    <string name="meditate_hear_out">Hear Out</string>
+    <string name="meditate_feel_out">Feel Out</string>
+    <string name="meditate_mental_image">Mental Image</string>
+    <string name="meditate_mental_talk">Mental Talk</string>
+    <string name="meditate_mental_body_states">Emotional Body States</string>
+    <string name="meditate_mental_sight">Sight</string>
+    <string name="meditate_mental_sound">Sound</string>
+    <string name="meditate_mental_body_sensation">Body Sensations</string>
+
+    <!-- well done activity -->
+    <string name="well_done_title">Well done.</string>
+    <string name="well_done_info">You are one step closer to Enlightenment. Take a moment to reflect on your session.</string>
+    <string name="well_done_return">Return</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_monastery">MonasteryActivity</string>
+    <string name="title_activity_choose_time">ChooseTimeActivity</string>
+    <string name="title_activity_prepare">PrepareActivity</string>
+    <string name="title_activity_meditate">MeditateActivity</string>
+    <string name="title_activity_well_done">WellDoneActivity</string>
+
+    <!-- parse ids and keys -->
+    <string name="parse_application_id">tB3nhPldKub1CfPzJVsFY0iTC40vtqstRtpSpOFU</string>
+    <string name="parse_client_key">dxTLLNILiNqJEctmCVXqJorjkBkTvc3NqLWQ21Wa</string>
+    <string name="mind_button_text">Mind</string>
+    <string name="body_button_text">Body</string>
+    <string name="post_to_website_button_tex">Post to website</string>
+    <string name="choose_template_spinner_label">Choose template: </string>
+    <string name="meditate_ins">Ins</string>
+    <string name="meditate_outs">Outs</string>
+    <string name="meditate_external_body">External, Body</string>
+    <string name="meditate_internal_mind">Internal, Mind</string>
+</resources>

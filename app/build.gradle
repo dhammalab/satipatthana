@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
+    compileSdkVersion 22
+    buildToolsVersion "23.0.1"
+
+    signingConfigs {
+        releaseConfig {
+            storeFile file("../keystore.jks")
+            storePassword "sati12"
+            keyAlias "satipatthana"
+            keyPassword "sati12"
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.dhammalab.satipatthna"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 3
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false // new version
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.releaseConfig
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.github.johnkil.android-robototextview:robototextview:2.1.0'
+    compile 'org.apache.commons:commons-lang3:3.3.2'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'joda-time:joda-time:2.3'
+    compile 'com.crittercism:crittercism-android-agent:+'
+    compile 'com.parse:parse-android:1.10.1'
+    compile 'com.joanzapata.pdfview:android-pdfview:1.0.4@aar'
+}

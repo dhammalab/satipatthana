@@ -1,0 +1,84 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_start"
+    tools:context=".StartActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="9dp"
+                android:src="@drawable/ic_man" />
+
+            <com.devspark.robototextview.widget.RobotoTextView
+                android:id="@+id/dayNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@string/home_title"
+                android:textColor="@android:color/white"
+                android:textSize="35sp"
+                app:typeface="roboto_slab_light" />
+
+            <com.devspark.robototextview.widget.RobotoTextView
+                android:id="@+id/home_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/home_info"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                app:typeface="roboto_light" />
+
+            <com.devspark.robototextview.widget.RobotoButton
+                android:id="@+id/btn_go_to_monastery"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_background"
+                android:text="@string/home_go_to_monastery"
+                android:textSize="25sp"
+                app:typeface="roboto_light" />
+
+            <com.devspark.robototextview.widget.RobotoButton
+                android:id="@+id/btn_meditate"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_background"
+                android:text="@string/home_skip"
+                android:textSize="25sp"
+                app:typeface="roboto_light" />
+
+            <com.devspark.robototextview.widget.RobotoButton
+                android:id="@+id/btn_analysis"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_background"
+                android:text="@string/home_analysis"
+                android:textSize="25sp"
+                android:visibility="gone"
+                app:typeface="roboto_light" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,30 @@
+<html>
+<head>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="./jsapi.js"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['', ''],
+          %s
+        ]);
+
+        var options = {
+          title: 'Meditation time',
+          hAxis: {title: 'Date',  titleTextStyle: {color: '#333'}},
+          vAxis: {title: 'Minutes spent meditating',  titleTextStyle: {color: '#333'}, minValue: 0}
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div_3'));
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<body>
+Best Number of Days In a Row meditating: %d
+<br>Current Number of Days In a Row meditating: %d
+<br><div id="chart_div_3"></div>
+</body>
+</html>

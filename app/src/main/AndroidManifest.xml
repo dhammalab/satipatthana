@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dhammalab.satipatthna">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.dhammalab.satipatthna.SatiApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.dhammalab.satipatthna.StartActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dhammalab.satipatthna.HomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.dhammalab.satipatthna.MonasteryActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+            <!--
+                android:parentActivityName=".HomeActivity" meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.satipatthna.satipatthna.HomeActivity" /
+            -->
+        </activity>
+        <activity
+            android:name="com.dhammalab.satipatthna.ChooseTimeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.dhammalab.satipatthna.PrepareActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.dhammalab.satipatthna.MeditateActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name="com.dhammalab.satipatthna.WellDoneActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.dhammalab.satipatthna.AnalysisActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.dhammalab.satipatthna.ProfileActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.dhammalab.satipatthna.ReadActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.dhammalab.satipatthna.ReadingMaterialListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

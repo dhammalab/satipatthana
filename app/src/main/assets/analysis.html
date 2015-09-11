@@ -1,0 +1,74 @@
+<html>
+<head>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="./jsapi.js"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['', ''],
+          %s
+        ]);
+
+        var options = {
+          title: 'Frequency of note types',
+          pieHole: 0.0,
+          colors: ['#2ecc71','#3498db','#9b59b6','#f1c40f','#e67e22','#e74c3c']
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+
+        data = google.visualization.arrayToDataTable([
+          ['', ''],
+          %s
+        ]);
+
+        options = {
+          title: 'Duration of note types',
+          pieHole: 0.0,
+          colors: ['#2ecc71','#3498db','#9b59b6','#f1c40f','#e67e22','#e74c3c']
+        };
+
+        chart = new google.visualization.PieChart(document.getElementById('duration_pie_chart'));
+        chart.draw(data, options);
+
+        data = google.visualization.arrayToDataTable([
+          ['', ''],
+          %s
+        ]);
+
+        options = {
+          title: 'Note speed over session',
+          hAxis: {title: '',  titleTextStyle: {color: '#333'}},
+          vAxis: {title: 'Number of notes',  titleTextStyle: {color: '#333'}, minValue: 0}
+        };
+
+        chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+
+        data = google.visualization.arrayToDataTable([
+          ['', ''],
+          %s
+        ]);
+
+        options = {
+          title: 'Distribution of note lengths',
+          hAxis: {title: ''},
+          vAxis: {minValue: 0}
+        };
+
+        chart = new google.visualization.ColumnChart(document.getElementById('chart_div_2'));
+        chart.draw(data, options);
+
+      }
+    </script>
+</head>
+<body>
+<div id="donutchart"></div>
+<div id="duration_pie_chart"></div>
+<div id="chart_div"></div>
+<div id="chart_div_2"></div>
+</body>
+</html>
