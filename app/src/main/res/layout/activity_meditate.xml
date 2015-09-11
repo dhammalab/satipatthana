@@ -27,192 +27,51 @@
             android:layout_height="match_parent"
             android:background="#ff9d1f" />
 
-        <LinearLayout
+        <com.dhammalab.satipatthna.views.NotingButton
             android:id="@+id/ins"
             android:visibility="gone"
+            app:title="@string/meditate_ins"
+            app:subtitle="@string/meditate_internal_mind"
             android:orientation="vertical"
             android:layout_width="0dp"
             android:layout_weight="3"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"/>
 
-            <com.devspark.robototextview.widget.RobotoTextView
-                android:id="@+id/meditate_gone"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:paddingBottom="2dp"
-                android:text="@string/meditate_gone"
-                android:textColor="#3e3b37"
-                android:textSize="35sp"
-                android:visibility="gone"
-                app:typeface="roboto_light" />
-
-            <com.devspark.robototextview.widget.RobotoTextView
-                android:id="@+id/meditate_title"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="bottom|center_horizontal"
-                android:paddingBottom="2dp"
-                android:text="@string/meditate_ins"
-                android:textColor="#bfcdca"
-                android:textSize="35sp"
-                app:typeface="roboto_light" />
-
-            <com.devspark.robototextview.widget.RobotoTextView
-                android:id="@+id/meditate_subtitle"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="top|center_horizontal"
-                android:paddingTop="2dp"
-                android:text="@string/meditate_internal_mind"
-                android:textColor="#3e3b37"
-                android:textSize="20sp"
-                app:typeface="roboto_light" />
-        </LinearLayout>
-
-        <LinearLayout
+        <com.dhammalab.satipatthna.views.NotingButton
             android:id="@+id/seeIn"
+            app:title="@string/meditate_see_in"
+            app:subtitle="@string/meditate_mental_image"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="vertical">
-
-            <com.devspark.robototextview.widget.RobotoTextView
-                android:id="@+id/meditate_gone"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:paddingBottom="2dp"
-                android:text="@string/meditate_gone"
-                android:textColor="#3e3b37"
-                android:textSize="35sp"
-                android:visibility="gone"
-                app:typeface="roboto_light" />
-
-            <com.devspark.robototextview.widget.RobotoTextView
-                android:id="@+id/meditate_title"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="bottom|center_horizontal"
-                android:paddingBottom="2dp"
-                android:text="@string/meditate_see_in"
-                android:textColor="#bfcdca"
-                android:textSize="35sp"
-                app:typeface="roboto_light" />
-
-            <com.devspark.robototextview.widget.RobotoTextView
-                android:id="@+id/meditate_subtitle"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="top|center_horizontal"
-                android:paddingTop="2dp"
-                android:text="@string/meditate_mental_image"
-                android:textColor="#3e3b37"
-                android:textSize="20sp"
-                app:typeface="roboto_light" />
-        </LinearLayout>
+            android:orientation="vertical" />
 
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:background="#ff9d1f" />
 
-        <LinearLayout
+        <com.dhammalab.satipatthna.views.NotingButton
             android:id="@+id/hearIn"
+            app:title="@string/meditate_hear_in"
+            app:subtitle="@string/meditate_mental_talk"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="vertical">
-
-            <com.devspark.robototextview.widget.RobotoTextView
-                android:id="@+id/meditate_gone"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:paddingBottom="2dp"
-                android:text="@string/meditate_gone"
-                android:textColor="#3e3b37"
-                android:textSize="35sp"
-                android:visibility="gone"
-                app:typeface="roboto_light" />
-
-            <com.devspark.robototextview.widget.RobotoTextView
-                android:id="@+id/meditate_title"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="bottom|center_horizontal"
-                android:paddingBottom="2dp"
-                android:text="@string/meditate_hear_in"
-                android:textColor="#bfcdca"
-                android:textSize="35sp"
-                app:typeface="roboto_light" />
-
-            <com.devspark.robototextview.widget.RobotoTextView
-                android:id="@+id/meditate_subtitle"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="top|center_horizontal"
-                android:paddingTop="2dp"
-                android:text="@string/meditate_mental_talk"
-                android:textColor="#3e3b37"
-                android:textSize="20sp"
-                app:typeface="roboto_light" />
-        </LinearLayout>
-
+            android:orientation="vertical" />
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:background="#ff9d1f" />
 
-        <LinearLayout
+        <com.dhammalab.satipatthna.views.NotingButton
             android:id="@+id/feelIn"
+            app:title="@string/meditate_feel_in"
+            app:subtitle="@string/meditate_mental_body_states"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="vertical">
-
-            <com.devspark.robototextview.widget.RobotoTextView
-                android:id="@+id/meditate_gone"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:paddingBottom="2dp"
-                android:text="@string/meditate_gone"
-                android:textColor="#3e3b37"
-                android:textSize="35sp"
-                android:visibility="gone"
-                app:typeface="roboto_light" />
-
-            <com.devspark.robototextview.widget.RobotoTextView
-                android:id="@+id/meditate_title"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="bottom|center_horizontal"
-                android:paddingBottom="2dp"
-                android:text="@string/meditate_feel_in"
-                android:textColor="#bfcdca"
-                android:textSize="35sp"
-                app:typeface="roboto_light" />
-
-            <com.devspark.robototextview.widget.RobotoTextView
-                android:id="@+id/meditate_subtitle"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="top|center_horizontal"
-                android:paddingTop="2dp"
-                android:text="@string/meditate_mental_body_states"
-                android:textColor="#3e3b37"
-                android:textSize="20sp"
-                app:typeface="roboto_light" />
-        </LinearLayout>
+            android:orientation="vertical" />
 
         <View
             android:layout_width="1dp"
@@ -243,192 +102,52 @@
             android:layout_height="match_parent"
             android:background="#1fcdff" />
 
-        <LinearLayout
+        <com.dhammalab.satipatthna.views.NotingButton
             android:id="@+id/outs"
             android:visibility="gone"
+            app:title="@string/meditate_outs"
+            app:subtitle="@string/meditate_external_body"
             android:orientation="vertical"
             android:layout_width="0dp"
             android:layout_weight="3"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"/>
 
-            <com.devspark.robototextview.widget.RobotoTextView
-                android:id="@+id/meditate_gone"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:paddingBottom="2dp"
-                android:text="@string/meditate_gone"
-                android:textColor="#3e3b37"
-                android:textSize="35sp"
-                android:visibility="gone"
-                app:typeface="roboto_light" />
-
-            <com.devspark.robototextview.widget.RobotoTextView
-                android:id="@+id/meditate_title"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="bottom|center_horizontal"
-                android:paddingBottom="2dp"
-                android:text="@string/meditate_outs"
-                android:textColor="#bfcdca"
-                android:textSize="35sp"
-                app:typeface="roboto_light" />
-
-            <com.devspark.robototextview.widget.RobotoTextView
-                android:id="@+id/meditate_subtitle"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="top|center_horizontal"
-                android:paddingTop="2dp"
-                android:text="@string/meditate_external_body"
-                android:textColor="#3e3b37"
-                android:textSize="20sp"
-                app:typeface="roboto_light" />
-        </LinearLayout>
-
-        <LinearLayout
+        <com.dhammalab.satipatthna.views.NotingButton
             android:id="@+id/seeOut"
+            app:title="@string/meditate_see_out"
+            app:subtitle="@string/meditate_mental_sight"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="vertical">
-
-            <com.devspark.robototextview.widget.RobotoTextView
-                android:id="@+id/meditate_gone"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:paddingBottom="2dp"
-                android:text="@string/meditate_gone"
-                android:textColor="#3e3b37"
-                android:textSize="35sp"
-                android:visibility="gone"
-                app:typeface="roboto_light" />
-
-            <com.devspark.robototextview.widget.RobotoTextView
-                android:id="@+id/meditate_title"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="bottom|center_horizontal"
-                android:paddingBottom="2dp"
-                android:text="@string/meditate_see_out"
-                android:textColor="#bfcdca"
-                android:textSize="35sp"
-                app:typeface="roboto_light" />
-
-            <com.devspark.robototextview.widget.RobotoTextView
-                android:id="@+id/meditate_subtitle"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="top|center_horizontal"
-                android:paddingTop="2dp"
-                android:text="@string/meditate_mental_sight"
-                android:textColor="#3e3b37"
-                android:textSize="20sp"
-                app:typeface="roboto_light" />
-        </LinearLayout>
+            android:orientation="vertical" />
 
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:background="#1fcdff" />
 
-        <LinearLayout
+        <com.dhammalab.satipatthna.views.NotingButton
             android:id="@+id/hearOut"
+            app:title="@string/meditate_hear_out"
+            app:subtitle="@string/meditate_mental_sound"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="vertical">
-
-            <com.devspark.robototextview.widget.RobotoTextView
-                android:id="@+id/meditate_gone"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:paddingBottom="2dp"
-                android:text="@string/meditate_gone"
-                android:textColor="#3e3b37"
-                android:textSize="35sp"
-                android:visibility="gone"
-                app:typeface="roboto_light" />
-
-            <com.devspark.robototextview.widget.RobotoTextView
-                android:id="@+id/meditate_title"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="bottom|center_horizontal"
-                android:paddingBottom="2dp"
-                android:text="@string/meditate_hear_out"
-                android:textColor="#bfcdca"
-                android:textSize="35sp"
-                app:typeface="roboto_light" />
-
-            <com.devspark.robototextview.widget.RobotoTextView
-                android:id="@+id/meditate_subtitle"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="top|center_horizontal"
-                android:paddingTop="2dp"
-                android:text="@string/meditate_mental_sound"
-                android:textColor="#3e3b37"
-                android:textSize="20sp"
-                app:typeface="roboto_light" />
-        </LinearLayout>
+            android:orientation="vertical" />
 
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:background="#1fcdff" />
 
-        <LinearLayout
+        <com.dhammalab.satipatthna.views.NotingButton
             android:id="@+id/feelOut"
+            app:title="@string/meditate_feel_out"
+            app:subtitle="@string/meditate_mental_body_sensation"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="vertical">
-
-            <com.devspark.robototextview.widget.RobotoTextView
-                android:id="@+id/meditate_gone"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:paddingBottom="2dp"
-                android:text="@string/meditate_gone"
-                android:textColor="#3e3b37"
-                android:textSize="35sp"
-                android:visibility="gone"
-                app:typeface="roboto_light" />
-
-            <com.devspark.robototextview.widget.RobotoTextView
-                android:id="@+id/meditate_title"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="bottom|center_horizontal"
-                android:paddingBottom="2dp"
-                android:text="@string/meditate_feel_out"
-                android:textColor="#bfcdca"
-                android:textSize="35sp"
-                app:typeface="roboto_light" />
-
-            <com.devspark.robototextview.widget.RobotoTextView
-                android:id="@+id/meditate_subtitle"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:gravity="top|center_horizontal"
-                android:paddingTop="2dp"
-                android:text="@string/meditate_mental_body_sensation"
-                android:textColor="#3e3b37"
-                android:textSize="20sp"
-                app:typeface="roboto_light" />
-        </LinearLayout>
+            android:orientation="vertical" />
 
         <View
             android:layout_width="1dp"
