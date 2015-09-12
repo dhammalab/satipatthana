@@ -28,7 +28,7 @@ public class PrepareActivity extends BaseActivity {
         countDownText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //startActivity(new Intent(PrepareActivity.this, MeditateActivity.class));
+                startActivity(new Intent(PrepareActivity.this, MeditateActivity.class));
             }
         });
 
