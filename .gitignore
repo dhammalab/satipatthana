@@ -6,3 +6,6 @@
 *.apk
 *.iml
 release-keystore.jks
+00-gradle-generated.sbt
+target
+project/target
