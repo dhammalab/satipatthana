@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewParent;
 import android.view.Window;
 import android.widget.LinearLayout;
 
@@ -46,23 +47,22 @@ public class MeditateActivity extends BaseActivity implements View.OnClickListen
         settings = getSettings();
 
         ins = (LinearLayout) findViewById(R.id.ins);
-        ins.setOnClickListener(this);
         seeIn = (LinearLayout) findViewById(R.id.seeIn);
-        seeIn.setOnClickListener(this);
         hearIn = (LinearLayout) findViewById(R.id.hearIn);
-        hearIn.setOnClickListener(this);
         feelIn = (LinearLayout) findViewById(R.id.feelIn);
-        feelIn.setOnClickListener(this);
         outs = (LinearLayout) findViewById(R.id.outs);
-        outs.setOnClickListener(this);
         seeOut = (LinearLayout) findViewById(R.id.seeOut);
-        seeOut.setOnClickListener(this);
         hearOut = (LinearLayout) findViewById(R.id.hearOut);
-        hearOut.setOnClickListener(this);
         feelOut = (LinearLayout) findViewById(R.id.feelOut);
-        feelOut.setOnClickListener(this);
 
         buttons = new LinearLayout[]{ins, seeIn, hearIn, feelIn, outs, seeOut, hearOut, feelOut};
+
+        for(LinearLayout button : buttons) {
+            for (int i = 0; i < button.getChildCount(); i++) {
+                View v = button.getChildAt(i);
+                v.setOnClickListener(this);
+            }
+        }
 
         Template template = settings.getTemplate();
 
@@ -120,7 +120,8 @@ public class MeditateActivity extends BaseActivity implements View.OnClickListen
     }
 
     @Override
-    synchronized public void onClick(View view) {
+    synchronized public void onClick(View child) {
+        ViewParent view = child.getParent();
         NoteType type = null;
         if (view == seeIn) {
             type = NoteType.SEE_IN;
@@ -138,6 +139,8 @@ public class MeditateActivity extends BaseActivity implements View.OnClickListen
             type = NoteType.INS;
         } else if (view == outs) {
             type = NoteType.OUTS;
+        } else {
+            throw new RuntimeException("Parent "+view+" of child " + child+ " could not be found");
         }
         Event lastEvent = session.getLastEvent();
         boolean buttonVisible;
@@ -146,8 +149,14 @@ public class MeditateActivity extends BaseActivity implements View.OnClickListen
             buttonVisible = false;
         } else {
             if (lastEvent.getType() == type) {
-                session.addEvent(new Event(type, System.currentTimeMillis(), !lastEvent.isNoteAppear()));
-                buttonVisible = lastEvent.isNoteAppear();
+                boolean isNoteGone = (child.getId() == R.id.meditate_gone);
+                if(!isNoteGone && lastEvent.isNoteAppear()) {
+                    // If it's a consecutive "note appearance" without a gone between,
+                    // we first add an artificial gone noting
+                    session.addEvent(new Event(type, System.currentTimeMillis(), false));
+                }
+                session.addEvent(new Event(type, System.currentTimeMillis(), !isNoteGone));
+                buttonVisible = isNoteGone;
             } else {
                 if (lastEvent.isNoteAppear()) {
                     session.addEvent(new Event(lastEvent.getType(), System.currentTimeMillis(), false));
@@ -167,15 +176,12 @@ public class MeditateActivity extends BaseActivity implements View.OnClickListen
     }
 
     private void updateViewsVisibility(ViewGroup rootView, int visibility) {
-        View title = rootView.findViewById(R.id.meditate_title);
         View subtitle = rootView.findViewById(R.id.meditate_subtitle);
         View gone = rootView.findViewById(R.id.meditate_gone);
         if (visibility == View.GONE) {
-            title.setVisibility(View.GONE);
             subtitle.setVisibility(View.GONE);
             gone.setVisibility(View.VISIBLE);
         } else {
-            title.setVisibility(View.VISIBLE);
             subtitle.setVisibility(View.VISIBLE);
             gone.setVisibility(View.GONE);
         }
