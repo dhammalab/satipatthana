@@ -15,7 +15,7 @@ script:
   - "./gradlew build"
 before_install:
   - openssl aes-256-cbc -K $encrypted_51e6fa0069f1_key -iv $encrypted_51e6fa0069f1_iv
-  -in keystore.jks.enc -out keystore.jks -d
+  - in keystore.jks.enc -out keystore.jks -d
 deploy:
   provider: releases
   api_key:
