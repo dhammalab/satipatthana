@@ -16,3 +16,11 @@ script:
 before_install:
   - openssl aes-256-cbc -K $encrypted_51e6fa0069f1_key -iv $encrypted_51e6fa0069f1_iv
   -in keystore.jks.enc -out keystore.jks -d
+deploy:
+  provider: releases
+  api_key:
+    secure: GmzLb9ckFzdMPxfEAQVUuyH3+Dn3vUgk9TrvF3aylXdY6rJ1NYXWgfKfFoN9o6xksYcVgmFEIS6q38a73WKwDYAoPsSxWwGUM3GhLzUrpydL5PNAkDLNdPFLyr2hFyqviZuPT0esJyCZyNw3lC29H31RKHqUbUQXVMCniWDh9HmHC6iJ4DZKSdT9K6tv4JXwmqYubs7WhLIUidqgTo+C722wKcTMIgiBmLyMoyfVm4CySDII2Cc29DFrKVBEzoZEs+BxU176dlD/wZW5sEj7UGoHlzOzxvJ6ogtTrYJiyfRugIoetCZHYvPlTBxjAUY6adUCv96rgApRRoAMFJ1Qt820gKplgHbVzBuYjXxrmlZ5Sgf9RHaeEVvEmpgozg+JWlwa6/1T+3bOhQzi7KXXxJYvy/qGn009Ml6YfjAxyZT+YTIc7JP7nG7J4Bm81qKH2n/aHE1XTFpQ0aUHH/DJWA8hPuLsvuLposEGdXEoFdS4FUPww9tL0cpzE5LQWv4nP1ba4E6ZMdgtPFlDqkEKikNLElZ2H9q0Hekqq64n484oZs6sEDL67TjpEXLU5owaVq3ex0slan0Qo1B70IkF2gMj4fx853TQaefPjVB74qiTQ1eeufPAPM9rF123saDJ46IN1Qg6DHpFG/VVQzMWBHoD9yCo5uJHw+EQyJCtSto=
+  file: "./app/build/outputs/apk/app-release.apk"
+  on:
+    repo: dhammalab/satipatthana
+    tags: true
