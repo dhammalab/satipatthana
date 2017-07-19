@@ -28,7 +28,12 @@ public class SatiApplication extends Application {
     public void onCreate() {
         super.onCreate();
         Crittercism.initialize(getApplicationContext(), "53c54614466eda2cc200000d");
-        Parse.initialize(getApplicationContext(), getString(R.string.parse_application_id), getString(R.string.parse_client_key));
+        Parse.initialize(new Parse.Configuration.Builder(this)
+                .applicationId(getString(R.string.parse_application_id))
+                .server(getString(R.string.parse_server_url))
+                .build()
+        );
+        // Parse.initialize(getApplicationContext(), getString(R.string.parse_application_id), getString(R.string.parse_client_key));
         application = this;
         settings = new Settings(this);
         Meditations meditations = settings.getMeditations();
