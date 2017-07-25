@@ -8,7 +8,7 @@ android {
     }
 
     compileSdkVersion 22
-    buildToolsVersion "23.0.1"
+    buildToolsVersion '25.0.0'
 
     signingConfigs {
         releaseConfig {
@@ -42,6 +42,6 @@ dependencies {
     compile 'com.google.code.gson:gson:2.2.4'
     compile 'joda-time:joda-time:2.3'
     compile 'com.crittercism:crittercism-android-agent:+'
-    compile 'com.parse:parse-android:1.10.1'
+    compile 'com.parse:parse-android:1.15.7'
     compile 'com.joanzapata.pdfview:android-pdfview:1.0.4@aar'
 }
